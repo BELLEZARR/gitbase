@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+
+        <html>
+
+
+            <head>
+                <meta charset="UTF -8">
+                <meta http-equiv="X-UA-Compatible" content=*IE=edge">
+                <meta name="viewport" content="width=device-width, initial scale=1.0">
+                <link rel="stylesheet" href="style.css">
+                <title>Sign up</title>
+            </head>
+        
+
+
+        <body>
+            <form action="results.html" method="GET">
+                
+            </form>
+            <style>
+                * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ font-family: sans-serif;
+}
+small{
+    display: none;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(130deg, red,orange);
+}
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: firebrick;
+    border-radius: 5px;
+}
+.container .title {
+    font-size: 25px;
+ font-weight: 500;
+}
+.container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+margin: 10px 0 12px 0;
+}
+form .form.group{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+form span{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form.group input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid cornsilk;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width:2px;
+    transition: all 0.3s ease;
+}
+.form-group input:focus,
+.form-group input:valid{
+    border-color: orange
+}
+form .button{
+    height:40px ;
+    width:100% ;
+    margin: 40px 0;
+}
+form .button input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(130deg, red , orange );
+    color: beige;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+form .button input:hover{
+    background: linear-gradient(130deg , orange, red );
+}
+.was-validated small{
+    display: block;
+    color: red
+}
+@media(max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .form.group{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form {
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+        width: 0;
+    }
+    form .button{
+        margin: 20px 0;
+    }
+}
+
+            </style>
+<div class="form.wrap">
+    <form>
+        <h1>Sign up</h1>
+<span>Name</span>
+        <input type="text" placeholder="Enter Name"required>
+        <small>please enter name</small>
+<span>Email</span>
+        <input type="email" placeholder=" Enter Email address"required>
+        <small>please enter email</small>
+<span>Phone number</span>
+        <input type="phone number" placeholder=" Enter Phone number"required>
+        <small>please enter phone number</small>
+<span>Gender</span>
+<input type="gender" placeholder="Gender"required> 
+<small>please enter gender</small>
+<span>Password</span>
+<input type="password" placeholder="Password"required>
+<small>please enter password</small>
+<span><button type="submit"></button></span>
+ <input type="button" value="Sign up" >
+    </form>
+</div>
+<script>
+    const addForm = document.getElementById("form validation");
+    addForm.addEventListener("submit", (e)=>[
+        if(addForm.checkValidity() *** false)(
+            e.preventDefault();
+            e.stopPropagation();
+            addForm.classList.add('was-validated');
+            return false;
+            )
+    ]);
+</script>
+
+
+
+
+
+
+        </body>
+        
+        
+        
+        
+        
+        
+        
+        
+        </html>
